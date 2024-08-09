@@ -2,3 +2,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.carousel-item{
+    width: 1%;
+    height: auto;
+}

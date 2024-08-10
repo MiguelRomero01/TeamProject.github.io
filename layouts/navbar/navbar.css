@@ -1,0 +1,47 @@
+
+/*containers*/
+#navBar-container{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #F2613F;
+     color: white;
+     display: flex;
+     justify-content: center;
+}
+
+#navList{
+     display: flex;
+     list-style-type: none;
+}
+
+/*items*/
+ul .nav-Items{
+     font-size: 110%;
+     font-family: "Nunito", sans-serif;;
+     
+     padding: 0.2vh 2vw;
+     transition: all 0.2s ease;
+}
+
+/*links*/
+.links-Navbar{
+     color: white;
+     text-decoration: none;
+}
+
+.nav-Items:hover{
+     scale: 1.2;
+     text-decoration: underline;
+}
+
+/* 
+ .navbar a.active {
+     color: #ffffff;
+     font-weight: bold;
+     height: 15px;
+     border-bottom: 2px solid #fbffff;
+     transition: all 0.4s ease-in;
+     scale: 1.1;
+ }*/

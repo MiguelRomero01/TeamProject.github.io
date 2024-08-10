@@ -1,6 +1,6 @@
 
 /*containers*/
-#navBar-container{
+#navbarMenu{
      position: fixed;
      top: 0;
      left: 0;
@@ -13,16 +13,16 @@
 
 #navList{
      display: flex;
+     padding-top: 1vh;
      list-style-type: none;
 }
 
 /*items*/
 ul .nav-Items{
      font-size: 110%;
-     font-family: "Nunito", sans-serif;;
-     
+     font-family: sans-serif;
      padding: 0.2vh 2vw;
-     transition: all 0.2s ease;
+     transition: all 0.2s linear;
 }
 
 /*links*/

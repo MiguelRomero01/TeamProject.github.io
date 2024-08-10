@@ -1,5 +1,11 @@
 
 /*containers*/
+#navBar-placeholder{
+     position: sticky;
+     top: 0;
+     z-index: 2;
+}
+
 #navbarMenu{
      position: fixed;
      top: 0;
@@ -13,7 +19,7 @@
 
 #navList{
      display: flex;
-     padding-top: 1vh;
+     margin-top: 1vh;
      list-style-type: none;
 }
 

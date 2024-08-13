@@ -1,106 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrusel god</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/indexStyle.css">
-    <link rel="stylesheet" href="layouts/navbar/navbar.css"
+    <link rel="stylesheet" href="layouts/navbar/navbar.css">
+    <link rel="stylesheet" href="styles/cards.css">
+
+    
+
 </head>
 <body>
     <!------------@Miguel: Navbar------------>
     <div id="navBar-placeholder"></div>
     <script src="js/items/layouts/navbar.js"></script>
     
-  <!-----------------------------------@pablo y su papá: Inicio Carrusel-------------------------------------------->
-    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+  <!-----------------------------------@pablo: Inicio Carrusel-------------------------------------------->
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <h1 id="titulogod">Inmobiliaria fea :</h1>
+    <div class="carousel-inner d-block">
+      
+      <div class="carousel-item active d-item">
+        
+        <img src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://i.ytimg.com/vi/CINEOHkEVIE/maxresdefault.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!--botones del slide-->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <!-----------------------------------------@Juan Titulo de las Cards---------------------------------------->
+
+
+
+      <div class="bg-warning py-5">
+        <div class="container text-center mt-5">
+            <h2 class="section-title">Barrio Santa María del Lago</h2>
         </div>
 
-        <div class="carousel-inner ">
-          <div class="carousel-item d-item active text-center " >
-            <img  src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Primera img</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item d-item">
-            <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center d-img" alt="...">
-            <div class="carousel-caption  d-none d-md-block">
-              <h5>Segunda img</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item d-item text-center">
-            <img src="https://i.ytimg.com/vi/CINEOHkEVIE/maxresdefault.jpg" class="d-block w-100 mw-100 img-fluid text-center d-img" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tercera img</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!------------------------------------------------------------------------------ Titulo de las Cards---------------------------------------->
-
-      <div class="container text-center mt-5">
-        <h2 class="display-4 fw-bold text-primary mb-4">Barrio Santa María del Lago</h2>
-      </div>
-
-      <!-------------------------------------------------------------------------- Cards--------------------------------------------------------- -->
-
-      <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Apto 1</h5>
-                        <p class="card-text">Info carta 1</p>
-                        <a href="#" class="btn btn-primary">Ir a</a>
+        <!-------------------------------------------------------------------------- Cards--------------------------------------------------------- -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 1</h5>
+                            <p class="card-text">Info carta 1</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Apto 2</h5>
-                        <p class="card-text">Info carta 2</p>
-                        <a href="#" class="btn btn-primary">Ir a</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 2</h5>
+                            <p class="card-text">Info carta 2</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Apto 3</h5>
-                        <p class="card-text">Info carta 3</p>
-                        <a href="#" class="btn btn-primary">Ir a</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 3</h5>
+                            <p class="card-text">Info carta 3</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <div class="clientesSa">
+      <h2>Clientes Satisfechos</h2>
+      <div class="reseña">
+          <img src="assets/imgs/Logo_Kiriko.jpg" alt="">
+          <h3>Ramdom 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eos quaerat natus impedit voluptatum, dignissimos corrupti, modi porro error blanditiis ratione est in qui molestiae consequatur, quam officia tempore saepe.</p>
+          <div class="estrellas">
+              ★★★★
+          </div>
+      </div>
+      <div class="reseña">
+          <img src="assets/imgs/Logo_Ramattra.jpg" alt="">
+          <h3>Ramdom 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias, recusandae molestiae placeat odio repellendus nihil laboriosam molestias optio vero nisi provident neque, similique labore animi accusamus id deserunt maiores!</p>
+          <div class="estrellas">
+              ★★★★★
+          </div>
+      </div>
+      <div class="reseña">
+          <img src="assets/imgs/LysM0rke.jpg" alt="">
+          <h3>Ramdom 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque et repellendus corporis qui nihil magnam nemo velit autem itaque distinctio adipisci iusto tempore incidunt provident aliquam, ducimus reprehenderit delectus.</p>
+          <div class="estrellas">
+              ★★★★★
+          </div>
+      </div>
+  </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

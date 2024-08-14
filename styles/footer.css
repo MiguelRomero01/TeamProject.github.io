@@ -16,6 +16,7 @@
  .app-icons img {
      width: 150px;
  }
+
  .social-icons a {
      color: #fff;
      margin-right: 15px;
@@ -24,3 +25,8 @@
  .social-icons a:hover {
      color: #ff5722;
  }
+
+ /*Posibles colores:
+ #ECDFCC
+ #F1F6F9
+ */

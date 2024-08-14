@@ -50,6 +50,16 @@ body {
     transition: all 0.2s linear;
 }
 
+.carousel-control-prev{
+    margin: 0;
+    width: 80px;
+}  
+
+.carousel-control-next{
+    margin: 0;
+    width: 80px;
+}  
+
 #carousel-btn:hover{
     background-color: #e05637;
     scale: 1.07;
@@ -72,18 +82,17 @@ body {
     }
     
     #carousel-btn{
-        font-size: 18px;
-        margin-top: 30px;
-        padding: 10px 20px;
-        background-color: #F2613F;
-        color: white;
-        border: none;
-        cursor: pointer;
+        font-size: 13px;
+        padding: 10px 15px;
     }
 }
 
 
 /*----------------------------------------------------------------------ESTILOS CARDS--------------------------------------------------------------------*/
+
+#title-container{
+    background: #c6c6c69e;
+}
 
 .card {
     border-radius: 15px;
@@ -137,7 +146,7 @@ body {
     display: inline-block;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #007bff; 
+    color: black; 
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .section-title::before {
@@ -148,12 +157,4 @@ body {
     width: 50%;
     height: 5px;
     background-color: #ff5722; 
-    transition: width 0.3s ease;
-}
-.section-title:hover {
-    color: #ff5722; 
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
-}
-.section-title:hover::before {
-    width: 100%;
 }

@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*---------------------------------------carousel-----------------------*/
 .d-item{
     height: 720px;
 }
@@ -11,15 +12,74 @@ body {
     height: 100%;
     object-fit: fill;
 }
-#titulogod{
+
+/*carousel info <div*/
+#carousel-info{
     z-index: 1;
     position: absolute;
-    margin-top: 150px;
-    margin-left: 50px;
-    background-color: aliceblue;
+    margin-top: 15%;
+    margin-left: 8vw;
     padding: 20px;
-    border-radius: 50% 20% / 10% 40%;
-    border: 5px solid #111;
+}
+
+/*company's title*/
+#corouselTitle{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/*text about the company*/
+.text-carousel{
+    font-size: 1.1em;
+    color: white;
+    padding-right: 60%;
+}
+
+/*carousel button*/
+#carousel-btn{
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #F2613F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+}
+
+#carousel-btn:hover{
+    background-color: #e05637;
+    scale: 1.07;
+}
+
+@media (max-width: 500px){
+    #carousel-info{
+        margin-top: 50%;
+        margin-left: 7vw;
+    }
+
+    #corouselTitle{
+        font-size: 2em;
+    }
+    
+    .text-carousel{
+        font-size: 0.7em;
+        color: white;
+        padding-right: 30%;
+    }
+    
+    #carousel-btn{
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #F2613F;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 /*-----------------------------------------------------------ESTILOS CLIENTES SATISFECHOS-------------------------------------------------------*/

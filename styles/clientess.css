@@ -1,0 +1,42 @@
+/*-----------------------------------------------------------ESTILOS CLIENTES SATISFECHOS-------------------------------------------------------*/
+.clientesSa {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.clientesSa h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.reseña {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.reseña img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.reseña h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.reseña p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.estrellas {
+    color: #ff9800;
+    font-size: 1.5em;
+}

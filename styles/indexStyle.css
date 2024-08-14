@@ -50,6 +50,16 @@ body {
     transition: all 0.2s linear;
 }
 
+.carousel-control-prev{
+    margin: 0;
+    width: 80px;
+}  
+
+.carousel-control-next{
+    margin: 0;
+    width: 80px;
+}  
+
 #carousel-btn:hover{
     background-color: #e05637;
     scale: 1.07;

@@ -5,7 +5,7 @@ body {
 
 /*---------------------------------------carousel-----------------------*/
 .d-item{
-    height: 720px;
+    height: 100vh;
 }
 
 .d-img{
@@ -17,7 +17,7 @@ body {
 #carousel-info{
     z-index: 1;
     position: absolute;
-    margin-top: 15%;
+    margin-top: 30vh;
     margin-left: 8vw;
     padding: 20px;
 }
@@ -66,6 +66,10 @@ body {
 }
 
 @media (max-width: 500px){
+    .d-item{
+        height: 70vh;
+    }
+
     #carousel-info{
         margin-top: 50%;
         margin-left: 7vw;

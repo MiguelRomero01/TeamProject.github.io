@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Imagen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 3vh;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .form-container .btn-enviar {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container .btn-enviar:hover {
+            background-color: #0056b3;
+        }
+
+        .image-container {
+            flex: 1;
+            background-image: url('https://via.placeholder.com/450');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form 
+                action="https://formspree.io/f/xrbzklzp"
+                method="POST">
+
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="email">Correo Electrónico</label><br>
+                <input type="email" name="correo" placeholder="Ingresa tu Correo Electrónico" required>
+                
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea name="mensaje" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
+                <input type="submit" value="enviar mensaje" class="btn-enviar">
+
+                <input type="text" name="_honey" style="display:none">
+            </form>
+        </div>
+
+        <div class="image-container"></div>
+    </div>
+</body>
+</html>

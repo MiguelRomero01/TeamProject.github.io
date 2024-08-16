@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel god</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Inmobiliaria</title>
+
+    <!--CSS styles-->
     <link rel="stylesheet" href="styles/indexStyle.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="layouts/navbar/navbar.css"
     </head>
+=======
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/clientess.css">
+
+    <!--conecciones con paginas externas-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    <!--font awesome (iconos)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+>>>>>>> ccf22a79ff7738b6a3f62f2bdd7485be377fdbbb
 <body>
     <!------------@Miguel: Navbar------------>
-    <div id="navBar-placeholder"></div>
-    <script src="js/items/layouts/navbar.js"></script>
+    <div id="navBar-placeholder">
+      <nav id="navbarMenu">
+        <ul id="navList">
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-card"></i> About</a> 
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-flask"></i> Experience</a></li>
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contact</a></li></li>
+        </ul>
+    </nav>  
+    </div>
     
+<<<<<<< HEAD
   <!-----------------------------------@pablo y su papá: Inicio Carrusel-------------------------------------------->
 <!DOCTYPE html>
 
@@ -37,6 +61,177 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+=======
+  <!-----------------------------------@pablo: Inicio Carrusel-------------------------------------------->
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carousel-info">
+      <h1 id="corouselTitle">Inmobiliaria</h1>
+      <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius consequuntur, nemo possimus, tempore optio libero aspernatur animi hic debitis cupiditate fugiat, ducimus sit quae sunt ab placeat. Soluta, quae?</p>
+      <a href="#title-container" class="links-to-otherParts"><button id="carousel-btn">Conocer más</button></a>
+    </div>
+
+    <div class="carousel-inner d-block">
+      <div class="carousel-item active d-item">
+        
+        <img src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://i.ytimg.com/vi/CINEOHkEVIE/maxresdefault.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-----------------------------------------@Juan Titulo de las Cards---------------------------------------->
+      <div class="py-5" id="title-container">
+        <div class="container text-center mt-5" >
+            <h2 class="section-title">Barrio Santa María del Lago</h2>
+        </div>
+
+        <!-------------------------------------------------------------------------- Cards--------------------------------------------------------- -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 1</h5>
+                            <p class="card-text">Info carta 1</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 2</h5>
+                            <p class="card-text">Info carta 2</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apto 3</h5>
+                            <p class="card-text">Info carta 3</p>
+                            <a href="#" class="btn btn-info">Ir a</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="clientesSa">
+      <h2>Clientes Satisfechos</h2>
+      <div class="reseña">
+          <img src="assets/imgs/clientes/persona1.jpg" alt="">
+          <h3>Ramdom 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eos quaerat natus impedit voluptatum, dignissimos corrupti, modi porro error blanditiis ratione est in qui molestiae consequatur, quam officia tempore saepe.</p>
+          <div class="estrellas">
+              ★★★★
+          </div>
+      </div>
+      <div class="reseña">
+          <img src="assets/imgs/clientes/persona2.jpg" alt="">
+          <h3>Ramdom 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias, recusandae molestiae placeat odio repellendus nihil laboriosam molestias optio vero nisi provident neque, similique labore animi accusamus id deserunt maiores!</p>
+          <div class="estrellas">
+              ★★★★★
+          </div>
+      </div>
+      <div class="reseña">
+          <img src="assets/imgs/clientes/persona3.jpg" alt="">
+          <h3>Ramdom 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque et repellendus corporis qui nihil magnam nemo velit autem itaque distinctio adipisci iusto tempore incidunt provident aliquam, ducimus reprehenderit delectus.</p>
+          <div class="estrellas">
+              ★★★★★
+          </div>
+      </div>
+  </div>
+
+  <!--------------------------@Miguel: Contact us----------------------->
+
+
+  <!----------------@Juan: footer--------------------->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Links rapidos -->
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Creer</a></li>
+                    <li><a href="#">Career Detail</a></li>
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <!-- Comunidad inmobiliaria -->
+            <div class="col-md-3">
+                <h5>Community</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">News and Blogs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+
+            <!-- no se si esto vaya o no :D -->
+            <div class="col-md-3">
+                <h5>App Available on</h5>
+                <div class="app-icons">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a><br>
+                    <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="mt-3"></a>
+                </div>
+            </div>
+
+            <!-- Seguirnos en -->
+            <div class="col-md-3">
+                <h5>Follow on</h5>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer final -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2024 Inmobiliaria. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+>>>>>>> ccf22a79ff7738b6a3f62f2bdd7485be377fdbbb
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

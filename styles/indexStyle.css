@@ -3,8 +3,9 @@ body {
     padding: 0;
 }
 
+/*---------------------------------------carousel-----------------------*/
 .d-item{
-    height: 720px;
+    height: 100vh;
 }
 
 .d-img{
@@ -12,3 +13,152 @@ body {
     object-fit: fill;
 }
 
+/*carousel info <div*/
+#carousel-info{
+    z-index: 1;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 8vw;
+    padding: 20px;
+}
+
+/*company's title*/
+#corouselTitle{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/*text about the company*/
+.text-carousel{
+    font-size: 1.1em;
+    color: white;
+    padding-right: 60%;
+}
+
+/*carousel button*/
+#carousel-btn{
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #F2613F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+}
+
+.carousel-control-prev{
+    margin: 0;
+    width: 80px;
+}  
+
+.carousel-control-next{
+    margin: 0;
+    width: 80px;
+}  
+
+#carousel-btn:hover{
+    background-color: #e05637;
+    scale: 1.07;
+}
+
+@media (max-width: 500px){
+    .d-item{
+        height: 70vh;
+    }
+
+    #carousel-info{
+        margin-top: 50%;
+        margin-left: 7vw;
+    }
+
+    #corouselTitle{
+        font-size: 2em;
+    }
+    
+    .text-carousel{
+        font-size: 0.7em;
+        color: white;
+        padding-right: 30%;
+    }
+    
+    #carousel-btn{
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
+
+
+/*----------------------------------------------------------------------ESTILOS CARDS--------------------------------------------------------------------*/
+
+#title-container{
+    background: #c6c6c69e;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    transition: opacity 0.3s ease;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+.card-body {
+    text-align: center;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+/*--------------------------------------------------------------ESTILOS TITULO CARDS------------------------------------------------------------*/
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50%;
+    height: 5px;
+    background-color: #ff5722; 
+}

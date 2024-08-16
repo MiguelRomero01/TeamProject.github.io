@@ -8,7 +8,7 @@
     <!--CSS styles-->
     <link rel="stylesheet" href="styles/indexStyle.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="layouts/navbar/navbar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/clientess.css">
 
     <!--conecciones con paginas externas-->
@@ -20,8 +20,16 @@
 
 <body>
     <!------------@Miguel: Navbar------------>
-    <div id="navBar-placeholder"></div>
-    <script src="js/items/layouts/navbar.js"></script>
+    <div id="navBar-placeholder">
+      <nav id="navbarMenu">
+        <ul id="navList">
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-card"></i> About</a> 
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-flask"></i> Experience</a></li>
+            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contact</a></li></li>
+        </ul>
+    </nav>  
+    </div>
     
   <!-----------------------------------@pablo: Inicio Carrusel-------------------------------------------->
   
@@ -127,6 +135,9 @@
           </div>
       </div>
   </div>
+
+  <!--------------------------@Miguel: Contact us----------------------->
+
 
   <!----------------@Juan: footer--------------------->
   <footer class="footer">

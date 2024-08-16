@@ -1,0 +1,55 @@
+
+ #contact-container {
+     border-radius: 30px;
+     display: flex;
+     width: 80%;
+     max-width: 900px;
+     background-color: #f3f0f0;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .form-container {
+     flex: 1;
+     padding: 20px;
+     
+ }
+
+ .form-container h2 {
+     margin-bottom: 20px;
+     color: #333;
+ }
+
+ .form-container input,
+ .form-container textarea {
+     width: 95%;
+     padding: 10px;
+     margin-bottom: 3vh;
+     border: 1px solid #ccc;
+     border-radius: 20px;
+     font-size: 16px;
+     outline: none;
+ }
+
+ .form-container .btn-enviar {
+     width: 100%;
+     padding: 10px;
+     background-color: #007BFF;
+     border: none;
+     border-radius: 20   px;
+     color: white;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .form-container .btn-enviar:hover {
+     background-color: #0056b3;
+ }
+
+ .image-container {
+     flex: 1;
+     background-image: url('https://via.placeholder.com/450');
+     background-size: cover;
+     background-position: center;
+     border-top-right-radius: 30px;
+     border-bottom-right-radius: 30px;
+ }

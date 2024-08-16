@@ -1,0 +1,93 @@
+#dynamic-image-text-section {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 50px;
+     overflow: hidden; 
+   }
+   
+   
+   #images-column {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 40%;
+     transform: translateX(-50px); 
+     transition: transform 0.6s ease-in-out;
+   }
+   
+   #dynamic-image-text-section:hover #images-column {
+     transform: translateX(0);
+   }
+   
+   #images-column .image-big {
+     width: 100%;
+     height: auto;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     transition: transform 0.5s ease, box-shadow 0.5s ease;
+   }
+   
+   #images-column .image-big:hover {
+     transform: scale(1.05); 
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+   }
+   
+  
+   #images-column .image-small {
+     width: 100%;
+     height: auto;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     transition: transform 0.5s ease, box-shadow 0.5s ease;
+   }
+   
+   #images-column .image-small:hover {
+     transform: scale(1.05);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+   }
+   
+   #text-column {
+     width: 60%;
+     padding: 20px;
+     opacity: 0;
+     transform: translateY(50px); 
+     transition: opacity 0.6s ease, transform 0.6s ease;
+   }
+   
+   #dynamic-image-text-section:hover #text-column {
+     opacity: 1;
+     transform: translateY(0); 
+   }
+   
+  
+   #cta-btn {
+     position: relative;
+     overflow: hidden;
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+   }
+   
+   #cta-btn::before {
+     content: '';
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 300%;
+     height: 300%;
+     background: rgba(255, 255, 255, 0.2);
+     transform: translate(-50%, -50%) scale(0);
+     transition: transform 0.5s ease;
+     border-radius: 50%;
+   }
+   
+   #cta-btn:hover::before {
+     transform: translate(-50%, -50%) scale(1);
+   }
+   
+   #cta-btn:hover {
+     background-color: #0056b3; 
+   }

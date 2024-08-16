@@ -7,13 +7,12 @@
 
     <!--CSS styles-->
     <link rel="stylesheet" href="styles/indexStyle.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="layouts/navbar/navbar.css"
-    </head>
-=======
+    <link rel="stylesheet" href="layouts/navbar/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/clientess.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/acercade.css">
 
     <!--conecciones con paginas externas-->
     <!--bootstrap-->
@@ -22,7 +21,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
->>>>>>> ccf22a79ff7738b6a3f62f2bdd7485be377fdbbb
 <body>
     <!------------@Miguel: Navbar------------>
     <div id="navBar-placeholder">
@@ -35,33 +33,7 @@
         </ul>
     </nav>  
     </div>
-    
-<<<<<<< HEAD
-  <!-----------------------------------@pablo y su papá: Inicio Carrusel-------------------------------------------->
-<!DOCTYPE html>
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active d-item">
-            <img src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
-          </div>
-          <div class="carousel-item d-item">
-            <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
-          </div>
-          <div class="carousel-item d-item">
-            <img src="https://i.ytimg.com/vi/CINEOHkEVIE/maxresdefault.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-=======
   <!-----------------------------------@pablo: Inicio Carrusel-------------------------------------------->
   
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -93,6 +65,26 @@
     </button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!---------------------------------@Juan: Acerca de ------------------------------------->
+<div class="container my-5" id="dynamic-image-text-section">
+    <div class="row">
+      <div class="col-md-5 col-lg-4" id="images-column">
+        <img src="assets/imgs/acerca de/constructora1.jpg" class="image-big mb-4" alt="Imagen 1">
+        <img src="assets/imgs/acerca de/constructora2.jpg" class="image-small" alt="Imagen 2">
+      </div>
+  
+      <div class="col-md-7 col-lg-8 d-flex align-items-center" id="text-column">
+        <div>
+          <h3>CONSTRUCTORA JR ASOCIADOS S.A.S</h3>
+          <p>Porque alessandro sera tan homosexual ?</p>
+          <p>Eso es algo que no sabemos... Bueno si</p>
+          <a href="#" class="btn btn-primary" id="cta-btn">Click aqui para el chisme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
       <!-----------------------------------------@Juan Titulo de las Cards---------------------------------------->
       <div class="py-5" id="title-container">
@@ -168,7 +160,32 @@
   </div>
 
   <!--------------------------@Miguel: Contact us----------------------->
+  <div id="contact-container">
+    <div class="form-container">
+        <h2>Contacto</h2>
+        <form 
+            action="https://formspree.io/f/xrbzklzp"
+            method="POST">
 
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="email">Correo Electrónico</label><br>
+            <input type="email" name="correo" placeholder="Ingresa tu Correo Electrónico" required>
+            
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+            <label for="mensaje">Mensaje</label><br>
+            <textarea name="mensaje" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
+            <input type="submit" value="enviar mensaje" class="btn-enviar">
+
+            <input type="text" name="_honey" style="display:none">
+        </form>
+    </div>
+
+    <div class="image-container"></div>
+</div>
 
   <!----------------@Juan: footer--------------------->
   <footer class="footer">
@@ -231,7 +248,6 @@
     </div>
 </footer>
 
->>>>>>> ccf22a79ff7738b6a3f62f2bdd7485be377fdbbb
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

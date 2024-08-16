@@ -3,47 +3,54 @@
      position: sticky;
      top: 0;
      z-index: 2;
- }
+}
  
- #navbarMenu {
+#navbarMenu {
      position: fixed;
      top: 0;
      width: 100%;
      background-color: #2C2C2C;
      color: white;
      display: flex;
-     justify-content: left;
+     justify-content: space-between; 
      align-items: center;
      height: 50px; 
- }
+}
  
- #navList {
+#navList {
      display: flex;
      list-style-type: none;
      margin: 0; 
      padding: 0;
      align-items: center; 
- }
- 
- /*items*/
- ul .nav-Items {
+     width: 100%; 
+}
+
+/*items*/
+ul .nav-Items {
      font-size: 17px;
      font-family: sans-serif;
      padding: 0.1vh 2vw;
      transition: all 0.2s linear;
      display: flex;
      align-items: center; 
- }
- 
- /*links*/
- .links-Navbar {
+}
+
+/*links*/
+.links-Navbar {
      color: white;
      text-decoration: none;
- }
- 
- .nav-Items:hover {
+}
+
+/*Efecto hover*/
+.nav-Items:hover {
      scale: 1.1;
- }
+}
+
+.nav-right {
+    margin-left: auto; 
+    display: flex;
+}
  
  /* 
   .navbar a.active {

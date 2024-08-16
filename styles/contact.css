@@ -1,17 +1,16 @@
-
- #contact-container {
-     border-radius: 30px;
-     display: flex;
-     width: 80%;
-     max-width: 900px;
-     background-color: #f3f0f0;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
+#contact-container {
+    border-radius: 30px;
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #f3f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 4vh auto;
+}
 
  .form-container {
      flex: 1;
      padding: 20px;
-     
  }
 
  .form-container h2 {
@@ -35,19 +34,21 @@
      padding: 10px;
      background-color: #007BFF;
      border: none;
-     border-radius: 20   px;
+     border-radius: 20px;
      color: white;
      font-size: 16px;
      cursor: pointer;
+     transition: all 0.14s linear;
  }
 
  .form-container .btn-enviar:hover {
      background-color: #0056b3;
+     scale: 1.02;
  }
 
  .image-container {
      flex: 1;
-     background-image: url('https://via.placeholder.com/450');
+     background-image: url('https://www.northwooduk.com/wp-content/uploads/2023/02/Why-do-property-transactions-fall-through.jpg');
      background-size: cover;
      background-position: center;
      border-top-right-radius: 30px;

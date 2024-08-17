@@ -52,13 +52,9 @@ ul .nav-Items {
     display: flex;
 }
  
- /* 
-  .navbar a.active {
-      color: #ffffff;
-      font-weight: bold;
-      height: 15px;
-      border-bottom: 2px solid #fbffff;
-      transition: all 0.4s ease-in;
-      scale: 1.1;
-  }
+@media (max-width: 600px) {
+     ul .nav-Items {
+          font-size: 8px;
+     }
+}
  

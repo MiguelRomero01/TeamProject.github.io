@@ -26,10 +26,10 @@
     <div id="navBar-placeholder">
       <nav id="navbarMenu">
         <ul id="navList">
-            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-card"></i> About</a> 
-            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-flask"></i> Experience</a></li>
-            <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contact</a></li></li>
+            <li class="nav-Items"><a href="#carouselExampleAutoplaying" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="nav-Items"><a href="#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a> 
+            <li class="nav-Items"><a href="#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
+            <li class="nav-Items"><a href="#contact-container" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li></li>
             <div class="nav-right">
                 <li class="nav-Items"><a href="login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
                 <li class="nav-Items"><a href="#" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
@@ -42,7 +42,7 @@
   
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div id="carousel-info">
-      <h1 id="corouselTitle">Inmobiliaria</h1>
+      <h1 id="corouselTitle">CONSTRUCTORA JR ASOCIADOS S.A.S</h1>
       <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius consequuntur, nemo possimus, tempore optio libero aspernatur animi hic debitis cupiditate fugiat, ducimus sit quae sunt ab placeat. Soluta, quae?</p>
       <a href="#dynamic-image-text-section" class="links-to-otherParts"><button id="carousel-btn">Conocer más</button></a>
     </div>
@@ -50,10 +50,10 @@
     <div class="carousel-inner d-block">
       <div class="carousel-item active d-item">
         
-        <img src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+        <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
       </div>
       <div class="carousel-item d-item">
-        <img src="https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
+        <img src="https://images.ctfassets.net/cfexf643femz/1H3xy23nobNYHhmandji2z/52c4c9a5077314869f4d44539a7ed4ec/Fotos_La_haus__10_.jpg?w=1136&fm=webp&q=60" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
       </div>
       <div class="carousel-item d-item">
         <img src="https://i.ytimg.com/vi/CINEOHkEVIE/maxresdefault.jpg" class="d-block w-100 mw-100 img-fluid text-center h-100 d-img" alt="...">
@@ -91,7 +91,7 @@
 
 
       <!-----------------------------------------@Juan Titulo de las Cards---------------------------------------->
-      <div class="py-5" id="title-container">
+      <div class="py-5" id="sales-container">
         <div class="container text-center mt-5" >
             <h2 class="section-title">Barrio Santa María del Lago</h2>
         </div>
@@ -172,16 +172,16 @@
             method="POST">
 
             <label for="nombre">Nombre *</label><br>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
 
             <label for="email">Correo Electrónico *</label><br>
-            <input type="email" name="correo" placeholder="Ingresa tu Correo Electrónico" required>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu Correo Electrónico" required>
             
             <label for="telefono">Teléfono *</label><br>
-            <input type="tel" name="telefono" placeholder="Ingresa tu teléfono" required>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu teléfono" required>
 
             <label for="mensaje">Mensaje *</label><br>
-            <textarea name="mensaje" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
+            <textarea name="mensaje" id="mensaje" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
             <input type="submit" value="Enviar Mensaje" class="btn-enviar">
 
             <input type="text" name="_honey" style="display:none">

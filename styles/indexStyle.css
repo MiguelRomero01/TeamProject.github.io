@@ -67,7 +67,7 @@ body {
 
 @media (max-width: 500px){
     .d-item{
-        height: 70vh;
+        height: 80vh;
     }
 
     #carousel-info{

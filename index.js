@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended:false})); // para capturar datos que vengan
 
 // mostramos el formulario
 app.get("/", function(req, res){ // funcion de servidor >>> lo requerido req y lo que se responde res
-    res.render("registros")
+    res.render("registro.ejs")
 });
 
 // Enviar al servidor lo que el usuario digita.

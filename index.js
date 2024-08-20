@@ -35,8 +35,8 @@ app.post("/validar", function(req, res){ // funcion de servidor >>> lo requerido
     const datos = req.body; // 
     console.log(datos);
    
-    let p = datos.password; // captura lo que esta en ese txt
-    let l = datos.login; // captura lo que esta en ese txt
+    let p = datos.clave; // captura lo que esta en ese txt
+    let l = datos.usuario; // captura lo que esta en ese txt
 
 // insertamos en la base de datos
 let registrar = "INSERT INTO credenciales (clave, usuario) VALUES ('"+ p + "', '"+ l + "')";

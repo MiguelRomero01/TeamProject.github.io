@@ -2,7 +2,7 @@
   "name": "teamproject.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "registros.ejs",
   "directories": {
     "test": "test"
   },

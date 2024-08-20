@@ -1,7 +1,4 @@
-function signIn(){
-     let user = document.getElementById("").value;
-     let password = document.getElementById("").value;
-}
+
 //***************Agregamos el mosulo de mysql ********************************
 const mysql = require("mysql");
 // ***************************************************************************

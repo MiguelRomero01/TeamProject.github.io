@@ -1,4 +1,5 @@
-// agregar el servidor y configuara el puerto
+function signIn(){
+    // agregar el servidor y configuara el puerto
 const express = require("express");
 
 //***************Agregamos el mosulo de mysql ********************************
@@ -18,7 +19,7 @@ let conexion = mysql.createConnection({  // llamos al metodo de mysql y creamos 
 //*******************************************************************************/
 
 // crear unarchivo para trabajar el formulario >>> ojo en una Carpeta 
-app.set("view engine", "ejs"); // view engine = motor de vista
+//app.set("view engine", "ejs"); // view engine = motor de vista
 
 // **********************************************************************************************************
 app.use(express.json()); // para capturar que sean de esta extension
@@ -57,3 +58,5 @@ conexion.query(registrar, function(error){
 app.listen(3000, function(){ // creamos una funcion >>> validacion la creacion del servidor 
     console.log(" <<<< Servidor al 100% creado >>> http://localhost:3000");
 })
+
+}

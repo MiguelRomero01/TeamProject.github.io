@@ -1,6 +1,5 @@
-function signIn(){
-     let user = document.getElementById("").value;
-     let password = document.getElementById("").value;
+// agregar el servidor y configuara el puerto
+const express = require("express");
 
 //***************Agregamos el mosulo de mysql ********************************
 const mysql = require("mysql");
@@ -36,8 +35,8 @@ app.post("/validar", function(req, res){ // funcion de servidor >>> lo requerido
     const datos = req.body; // 
     console.log(datos);
    
-    let p = datos.contrasena; // Ahora captura la contraseña
-    let l = datos.usuario; // Ahora captura el usuario
+    let p = datos.password; // captura lo que esta en ese txt
+    let l = datos.login; // captura lo que esta en ese txt
 
 // insertamos en la base de datos
 let registrar = "INSERT INTO credenciales (clave, usuario) VALUES ('"+ p + "', '"+ l + "')";

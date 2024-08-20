@@ -31,24 +31,27 @@ app.get("/", function(req, res){ // funcion de servidor >>> lo requerido req y l
 
 // Enviar al servidor lo que el usuario digita.
 // en registro.ejs tenemos    <form action="/validar" method="post">  
-app.post("/validar", function(req, res){ // funcion de servidor >>> lo requerido req y lo que se responde res
-    const datos = req.body; // 
+const crypto = require('crypto');
+
+app.post("/validar", function(req, res) {
+    const datos = req.body;
     console.log(datos);
    
-    let p = datos.clave; // captura lo que esta en ese txt
-    let l = datos.usuario; // captura lo que esta en ese txt
+    let p = datos.clave; // Captura lo que está en ese txt
+    let l = datos.usuario; // Captura lo que está en ese txt
 
-// insertamos en la base de datos
-let registrar = "INSERT INTO credenciales (clave, usuario) VALUES ('"+ p + "', '"+ l + "')";
-conexion.query(registrar, function(error){
-    if (error){
-        throw error;
-    }else
-    {
-        console.log("Datos Insertado en la Data base al 100%");
-    }
+    // Crear el hash de la clave usando SHA-256
+    const hash = crypto.createHash('sha256').update(p).digest('hex');
 
-});
+    // Insertamos en la base de datos con la clave hasheada
+    let registrar = "INSERT INTO credenciales (clave, usuario) VALUES ('" + hash + "', '" + l + "')";
+    conexion.query(registrar, function(error) {
+        if (error) {
+            throw error;
+        } else {
+            console.log("Datos Insertados en la base de datos con éxito");
+        }
+    });
 
 })
 // ************************************************************************************************************

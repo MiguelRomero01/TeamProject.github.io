@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apto 1</title>
     <!--CSS styles-->
-    <link rel="stylesheet" href="styles/indexStyle.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="apto1.css">
+    <link rel="stylesheet" href="../public/styles/footer.css">
+    <link rel="stylesheet" href="../layouts/navbar/navbar-aptos-Style.css">
+    <link rel="stylesheet" href="aptos-Style.css">
 
     <!--conecciones con paginas externas-->
     <!--bootstrap-->
@@ -18,26 +17,11 @@
 </head>
 <body>
     <!------------@Miguel: Navbar------------>
-    <div id="navBar-placeholder">
-        <nav id="navbarMenu">
-          <ul id="navList">
-              <li class="nav-Items"><a href="#carouselExampleAutoplaying" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
-              <li class="nav-Items"><a href="#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a></li>
-              <li class="nav-Items"><a href="#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
-              <li class="nav-Items"><a href="#contact-container" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li>
-              <div class="nav-right">
-                  <li class="nav-Items"><a href="login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
-                  <li class="nav-Items"><a href="/views/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
-  
-              </div>
-          </ul>
-          
-      </nav>  
-      </div>
- 
+    <div id="navBar-placeholder"></div>
+    <script src="../layouts/navbar/navbar-aptos.js"></script>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="ubicacion">
         <h4>Ubicación principal:</h4>
         <p>
         Santa Maria del Lago, Bogotá, Bogotá, d.c.
@@ -65,6 +49,7 @@
             </button>
         </div>
 
+        <div id="info-general">
         <div class="row mb-4">
             <div class="col-md-4">
                 <p><i class="bi bi-house"></i> 3 habitaciones</p>
@@ -112,6 +97,7 @@
 
         <h4>Descripción de la propiedad:</h4>
         <p>apartamento en venta en Santa Maria del Lago, cuarto (4) piso exterior, cuenta con 65.72 metros distribuidos así; sala comedor, cocina abierta, zona de ropas, dos (2) baños, dos (2) habitaciones, la habitación principal con baño privado. cuenta con (1) un parqueadero. el edificio tiene un tres (3) año de construido. ascensor, terraza bbq. valor venta 390.000.000 adm 300.000</p>
+    </div>
     </div>
 
   <!----------------@Juan: footer--------------------->

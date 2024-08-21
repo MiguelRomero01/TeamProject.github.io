@@ -2,6 +2,7 @@
      background-color: #333;
      color: #fff;
      padding: 60px 0;
+     width: 100%;
  }
  .footer h5 {
      color: #ff5722;
@@ -25,8 +26,3 @@
  .social-icons a:hover {
      color: #ff5722;
  }
-
- /*Posibles colores:
- #ECDFCC
- #F1F6F9
- */

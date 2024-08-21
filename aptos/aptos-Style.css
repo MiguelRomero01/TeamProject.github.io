@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+/* Carrusel */
+.carousel-item img {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Propiedad - Características */
+.container h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.container p, .container ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.row p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.row p i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.carousel-item {
+    animation: fadeIn 1s;
+}

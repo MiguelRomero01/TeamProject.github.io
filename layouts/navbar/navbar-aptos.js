@@ -1,4 +1,4 @@
-fetch('navbar-aptos.html')
+fetch('/layouts/navbar-aptos.html')
           .then(response => response.text())
           .then(data => {
               document.getElementById('navBar-placeholder').innerHTML = data;

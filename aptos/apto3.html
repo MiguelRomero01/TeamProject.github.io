@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apto 3</title>
     <!--CSS styles-->
-    <link rel="stylesheet" href="styles/indexStyle.css">
-    <link rel="stylesheet" href="layouts/navbar/navbar.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="apto3.css">
-
+    <link rel="stylesheet" href="../public/styles/footer.css">
+    <link rel="stylesheet" href="../layouts/navbar/navbar-aptos-Style.css">
+    <link rel="stylesheet" href="aptos-Style.css">
     <!--conecciones con paginas externas-->
     <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
@@ -19,23 +16,11 @@
 </head>
 <body>
     <!------------@Miguel: Navbar------------>
-    <div id="navBar-placeholder">
-        <nav id="navbarMenu">
-          <ul id="navList">
-              <li class="nav-Items"><a href="../index.html" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
-              <li class="nav-Items"><a href="#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a> 
-              <li class="nav-Items"><a href="#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
-              <li class="nav-Items"><a href="#contact-container" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li></li>
-              <div class="nav-right">
-                  <li class="nav-Items"><a href="../login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
-                  <li class="nav-Items"><a href="../register/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
-              </div>
-          </ul>
-      </nav>  
-    </div>
+    <div id="navBar-placeholder"></div>
+    <script src="../layouts/navbar/navbar-aptos.js"></script>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="ubicacion">
         <h4>Ubicación principal:</h4>
         <p>
             Santa Maria del Lago, Bogotá, Bogotá, d.c.
@@ -63,49 +48,51 @@
             </button>
         </div>
 
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <p><i class="bi bi-house"></i> 3 habitaciones</p>
+        <div id="info-general">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <p><i class="bi bi-house"></i> 3 habitaciones</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="bi bi-droplet"></i> 2 baños</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="bi bi-rulers"></i> 120 m²</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <p><i class="bi bi-droplet"></i> 2 baños</p>
-            </div>
-            <div class="col-md-4">
-                <p><i class="bi bi-rulers"></i> 120 m²</p>
+
+            <h4>Precio de la vivienda: $230.000.000</h4>
+            <p>Precio de venta.</p>
+
+            <h4>Detalles de la propiedad:</h4>
+            <ul>
+                <li>Estrato 3</li>
+                <li>Tipo de inmueble : Apartamento</li>
+                <li>Baños : 1</li>
+                <li>Area Provada : 45.00 m2</li>
+                <li>Habitaciones : 2</li>
+                <li>Antiguedad : +30 años</li>
+                <li>Piso N# : 3</li>
+
+            </ul>
+
+            <h4>Comodidades de la propiedad:</h4>
+            <ul>
+                <li>Closet</li>
+                <li>Instalacion de gas</li>
+                <li>Servicios Independientes</li>
+                <li>Sobre via principal</li>
+                <li>PSUpermercado / Centros Comerciales</li>
+                <li>Transp. Publico cercano</li>
+                <li>Zona Comercial</li>
+                <li>Zona Industrial</li>
+                
+            </ul>
+
+            <h4>Descripción de la propiedad:</h4>
+            <p>Apartamento en venta Santa María del lago, Iluminado y acogedor apartamento en piso 3 con acceso por escalera, consta de sala comedor, 2 habitaciones de muy buen tamaño, 1 baño con iluminación natural, totalmente enchapado y con división en vidrio templado. Pisos en madera laminada en perfecto estado! Cerca a la Av. Calle 72 Av. Boyaca y Av. Ciudad de Cali, Clínica Sanitas Santa María del Lago, Parque Santa María del lago..</p>
             </div>
         </div>
-
-        <h4>Precio de la vivienda: $230.000.000</h4>
-        <p>Precio de venta.</p>
-
-        <h4>Detalles de la propiedad:</h4>
-        <ul>
-            <li>Estrato 3</li>
-            <li>Tipo de inmueble : Apartamento</li>
-            <li>Baños : 1</li>
-            <li>Area Provada : 45.00 m2</li>
-            <li>Habitaciones : 2</li>
-            <li>Antiguedad : +30 años</li>
-            <li>Piso N# : 3</li>
-
-        </ul>
-
-        <h4>Comodidades de la propiedad:</h4>
-        <ul>
-            <li>Closet</li>
-            <li>Instalacion de gas</li>
-            <li>Servicios Independientes</li>
-            <li>Sobre via principal</li>
-            <li>PSUpermercado / Centros Comerciales</li>
-            <li>Transp. Publico cercano</li>
-            <li>Zona Comercial</li>
-            <li>Zona Industrial</li>
-            
-        </ul>
-
-        <h4>Descripción de la propiedad:</h4>
-        <p>Apartamento en venta Santa María del lago, Iluminado y acogedor apartamento en piso 3 con acceso por escalera, consta de sala comedor, 2 habitaciones de muy buen tamaño, 1 baño con iluminación natural, totalmente enchapado y con división en vidrio templado. Pisos en madera laminada en perfecto estado! Cerca a la Av. Calle 72 Av. Boyaca y Av. Ciudad de Cali, Clínica Sanitas Santa María del Lago, Parque Santa María del lago..</p>
-    </div>
 
   <!----------------@Juan: footer--------------------->
   <footer class="footer">

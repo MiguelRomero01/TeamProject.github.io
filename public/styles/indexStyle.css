@@ -50,12 +50,12 @@ body {
     transition: all 0.2s linear;
 }
 
-.carousel-control-prev{
+#slidebuttonantes{
     margin: 0;
     width: 80px;
 }  
 
-.carousel-control-next{
+#slidebuttondespues{
     margin: 0;
     width: 80px;
 }  
@@ -64,6 +64,8 @@ body {
     background-color: #e05637;
     scale: 1.07;
 }
+
+
 
 @media (max-width: 500px){
     .d-item{
@@ -110,6 +112,12 @@ body {
 .card-img-top {
     transition: opacity 0.3s ease;
 }
+
+.card-img-top-3 {
+    width: 100%;
+    height: 29vh;
+}
+
 .card-img-overlay {
     position: absolute;
     top: 0;
